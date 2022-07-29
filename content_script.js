@@ -65,7 +65,6 @@ setTimeout(()=>{
     //observer change dom tree of playlist
     const observer = new MutationObserver(function () {
       try {
-        let c = countVideoInPlaylist();
         if (hasButtonLoop()) return;
         let actionMenu = getActionMenu();
         let lpcontainer = document.getElementById("lpcontainer");
