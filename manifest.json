@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Queue Looper",
+  "description": "Youtube queue loop",
+  "version": "0.0.2",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtubelopper@tugma_j4f",
+      "strict_min_version": "48.0"
+    }
+  }
+}
